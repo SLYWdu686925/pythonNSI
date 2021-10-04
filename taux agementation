@@ -1,0 +1,18 @@
+def f(x, a):    #Fonction qui permet de calculer une augmentation (ou une réduction avec une nombre négatif)
+    var = (1 + a/100)*x
+    return var
+ 
+ 
+a = None
+x = None
+while (x and a) is None: 
+    try:
+        x = float(input("Entrez le prix de base = "))
+        a = float(input("Entrez le pourcentage d'augmentation (ou nombre négatif si réduction) = "))
+    except:
+        print("N'écrivez pas n'importe quoi !\n")
+                                
+print("Le prix final est égal à ", f(x, a))
+ 
+
+
